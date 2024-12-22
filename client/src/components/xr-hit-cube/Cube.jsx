@@ -1,4 +1,3 @@
-import { OrbitControls } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import React, { useRef } from "react";
 
@@ -9,9 +8,7 @@ export default function () {
   });
   return (
     <>
-      <OrbitControls />
-      <ambientLight />
-      <mesh ref={cubeRef} position={[0 ,0, -3]}>
+      <mesh ref={cubeRef} position={[0, 0, -3]}>
         <boxGeometry args={[1.2, 1.2, 1.2]} />
         <meshStandardMaterial color="hotpink" />
       </mesh>
